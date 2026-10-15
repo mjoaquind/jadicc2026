@@ -371,7 +371,7 @@
 		});
 		
 		jQuery(".owl-sponsors").owlCarousel({
-			items: 5,
+			items: 3,
 			navigation: false,
 			pagination: false,
 			autoPlay: true,

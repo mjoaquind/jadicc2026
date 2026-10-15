@@ -6604,17 +6604,54 @@ a.read_more i {
 }
 
 .owl-sponsors .item {
-  margin: 10px;
+  margin: 0 15px;
+  text-align: center;
 }
 
 .owl-sponsors img {
+  box-sizing: border-box;
   background: #ffffff;
-  width: 100%;
+  width: auto;
   height: auto;
+  max-width: 100%;
   padding: 10px;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
+  display: inline-block;
+}
+
+.logos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-grid .logo-item {
+  margin: 10px;
+}
+
+.logos-grid img {
+  box-sizing: border-box;
+  background: #ffffff;
+  width: auto;
+  height: auto;
+  max-width: 240px;
+  padding: 8px;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  display: block;
+}
+
+/* Fila de 5 logos: se reduce separación y tamaño para que entren en una sola fila */
+.logos-grid--5 .logo-item {
+  margin: 5px;
+}
+
+.logos-grid--5 img {
+  max-width: 216px;
 }
 
 .gallery-item {
