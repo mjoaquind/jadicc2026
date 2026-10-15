@@ -108,7 +108,8 @@
                                     <div class="spacer-single"></div>
                                     <div class="subtitle s2">
 										<span><i class="icon-calendar"></i>29 y 30 de Octubre de 2026.</span>
-										<span><i class="icon-global"></i>Híbrido.</span>
+										<span><i class="icon-global"></i>Híbrido.</span><br>
+                                        <span><i class="icon-map-pin"></i>Concepción del Uruguay - Entre Ríos.</span>
 								<!--		<span><i class="icon_gift_alt"></i>Gratuito.</span> -->
                                     </div>
                                 </div>
@@ -235,6 +236,94 @@
 
     <!-- section begin -->
             <section id="section-schedules" class="no-top no-bottom text-light" data-stellar-background-ratio=".2">
+                <style>
+                    #section-schedules .de_tab_content { padding-top: 20px; }
+                    #section-schedules .sc-info h3 { margin-bottom: 8px; }
+                    #section-schedules .sc-info p { margin: 0 0 6px 0; font-size: 13px; line-height: 1.5; }
+                    #section-schedules .sc-info .sc-sub { font-style: italic; opacity: .9; }
+                    #section-schedules .sc-info .sc-meta { font-size: 12px; letter-spacing: .3px; opacity: .85; }
+                    #section-schedules .sch-band { border-left: 3px solid rgba(255, 255, 255, .35); }
+                    #section-schedules .sch-band .sc-info h3 { font-size: 15px !important; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 0; }
+                    #section-schedules details.papers { margin: 10px 0; }
+                    #section-schedules details.papers summary { cursor: pointer; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
+                    #section-schedules ul.papers-list { margin: 10px 0 0; padding-left: 18px; }
+                    #section-schedules ul.papers-list li { font-size: 12.5px; line-height: 1.45; opacity: .92; margin-bottom: 8px; }
+                    #section-schedules .ptag { display: inline-block; font-size: 10px; text-transform: uppercase; letter-spacing: 1px; border: 1px solid currentColor; border-radius: 3px; padding: 0 5px; margin-right: 5px; opacity: .8; }
+                    #section-schedules .pauth { opacity: .8; }
+
+                    #section-schedules .schedule-item .sc-name span::before {
+                        content: "";
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        margin-right: 6px;
+                        vertical-align: middle;
+                        opacity: 0.8;
+                    }
+                    #section-schedules .sch-taller { border-left: 3px solid #e8c56a; }
+                    #section-schedules .sch-taller .sc-name span { color: #e8c56a; }
+                    #section-schedules .sch-taller .sc-name span::before { background: #e8c56a; }
+                    #section-schedules .sch-conf { border-left: 3px solid #9ecbff; }
+                    #section-schedules .sch-conf .sc-name span { color: #9ecbff; }
+                    #section-schedules .sch-conf .sc-name span::before { background: #9ecbff; }
+                    #section-schedules .sch-mesa { border-left: 3px solid #b3c4ff; }
+                    #section-schedules .sch-mesa .sc-name span { color: #b3c4ff; }
+                    #section-schedules .sch-mesa .sc-name span::before { background: #b3c4ff; }
+                    #section-schedules .sch-demo { border-left: 3px solid #9ae6b4; }
+                    #section-schedules .sch-demo .sc-name span { color: #9ae6b4; }
+                    #section-schedules .sch-demo .sc-name span::before { background: #9ae6b4; }
+                    #section-schedules .sch-social { border-left: 3px solid #f4a9c8; }
+                    #section-schedules .sch-social .sc-name span { color: #f4a9c8; }
+                    #section-schedules .sch-social .sc-name span::before { background: #f4a9c8; }
+
+                    #section-schedules .schedule-item.sch-taller .btn-custom {
+                        color: #e8c56a !important;
+                        border-color: #e8c56a !important;
+                        background: transparent !important;
+                    }
+                    #section-schedules .schedule-item.sch-taller .btn-custom:hover {
+                        background: #e8c56a !important;
+                        color: #fff !important;
+                    }
+                    #section-schedules .schedule-item.sch-conf .btn-custom {
+                        color: #9ecbff !important;
+                        border-color: #9ecbff !important;
+                        background: transparent !important;
+                    }
+                    #section-schedules .schedule-item.sch-conf .btn-custom:hover {
+                        background: #9ecbff !important;
+                        color: #fff !important;
+                    }
+                    #section-schedules .schedule-item.sch-mesa .btn-custom {
+                        color: #b3c4ff !important;
+                        border-color: #b3c4ff !important;
+                        background: transparent !important;
+                    }
+                    #section-schedules .schedule-item.sch-mesa .btn-custom:hover {
+                        background: #b3c4ff !important;
+                        color: #fff !important;
+                    }
+                    #section-schedules .schedule-item.sch-demo .btn-custom {
+                        color: #9ae6b4 !important;
+                        border-color: #9ae6b4 !important;
+                        background: transparent !important;
+                    }
+                    #section-schedules .schedule-item.sch-demo .btn-custom:hover {
+                        background: #9ae6b4 !important;
+                        color: #fff !important;
+                    }
+                    #section-schedules .schedule-item.sch-social .btn-custom {
+                        color: #f4a9c8 !important;
+                        border-color: #f4a9c8 !important;
+                        background: transparent !important;
+                    }
+                    #section-schedules .schedule-item.sch-social .btn-custom:hover {
+                        background: #f4a9c8 !important;
+                        color: #fff !important;
+                    }
+                </style>
+
                 <div class="overlay-gradient pt80 pb80">
                     <div class="container">
                         <div class="row">
@@ -243,70 +332,220 @@
                                 <div class="small-border wow fadeInUp" data-wow-delay=".2s"></div>
                             </div>
                             <div class="col-md-6 col-md-offset-3 text-center">
-                     <!-- boton descargar cronograma 
-                              <p class="lead wow fadeInUp">
-                                 <a href="docs/CronogramaJadicc2024.pdf" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Descargar Cronograma de Actividades</font></a>
-                     -->           </p>
-                                
+                                <!-- boton descargar cronograma
+                                <p class="lead wow fadeInUp">
+                                    <a href="docs/CronogramaJadicc2026.pdf" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Descargar Cronograma de Actividades</font></a>
+                                </p>
+                                -->
                                 <div class="spacer-single"></div>
                             </div>
 
                             <div class="col-md-12 wow fadeInUp">
                                 <div class="de_tab tab_style_4 text-center">
                                     <ul class="de_nav">
-								<!--		<li  data-link="#section-services-tab">
+                                        <li class="active" data-link="#section-services-tab">
                                             <h3>Lunes <span> </span></h3>
-                                            <h4>22 de Octubre 2024 </h4>
-                                            <h4>Talleres JADiCC</h4>
+                                            <h4>26 de Octubre 2026</h4>
+                                            <h4>Virtual</h4>
                                         </li>
-										<li data-link="#section-services-tab">
+                                        <li data-link="#section-services-tab">
                                             <h3>Martes <span> </span></h3>
-                                            <h4> 22 de Octubre 2024</h4>
-                                            <h4>Talleres JADiCC</h4>
+                                            <h4>27 de Octubre 2026</h4>
+                                            <h4>Virtual</h4>
                                         </li>
                                         <li data-link="#section-services-tab">
                                             <h3>Miércoles <span></span></h3>
-                                            <h4>23 de Octubre 2024</h4>
-                                            <h4>Talleres - Demos </h4>
+                                            <h4>28 de Octubre 2026</h4>
+                                            <h4>Virtual</h4>
                                         </li>
-                                  -->      <li class="active" data-link="#section-services-tab">
+                                        <li data-link="#section-services-tab">
                                             <h3>Jueves <span></span></h3>
                                             <h4>29 de Octubre 2026</h4>
-                                            <h4>Jornadas</h4>
+                                            <h4>Presencial</h4>
                                         </li>
                                         <li data-link="#section-services-tab">
                                             <h3>Viernes <span></span></h3>
                                             <h4>30 de Octubre 2026</h4>
-                                            <h4>Jornadas</h4>
+                                            <h4>Presencial</h4>
                                         </li>
                                     </ul>
 
                                     <div class="de_tab_content text-left">
 
-                                        <div id="tab2" class="tab_single_content">
+                                        <!-- ============ LUNES 26 ============ -->
+                                        <div id="tab1" class="tab_single_content">
                                             <div class="row">
                                                 <div class="col-md-12">
+
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-taller">
                                                             <div class="sc-time">
-                                                                <p>10:00</p>
+                                                                <p>09:00 a 11:00</p>
                                                             </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Dr. Marcos Gómez </h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Andrea González<br>Camilo Fervenza</h4>
+                                                                <span>Taller Virtual</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Conferencia central. "¿Para qué aprender ciencias de la computación si ya tenemos la IA?"</h3>
+                                                                <h3>Taller de computación-robótica-diseño 3D: Articulación, reciclaje tecnológico y resolución de problemas del Ciclo Básico Técnico</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Andrea González (E.E.T. Nº 3 “Dr. Miguel Ángel Marsiglia”) · Camilo Fervenza (E.E.T. Nº 3 “Dr. Miguel Ángel Marsiglia”, Anexo F.P.)</p>
+                                                                <a href="https://forms.gle/wqUWSxMuBnpyvHHx7" class="btn-custom scroll-to" target="_blank">Inscripción</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>18:00 a 20:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Viviana Bourdetta<br>Evelyn Curuchet<br>Alejandro Picart<br>Axel Blanc</h4>
+                                                                <span>Taller Virtual</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Profes-IA: docentes explorando la inteligencia artificial</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Viviana Bourdetta · Evelyn Curuchet · Alejandro Picart · Axel Blanc (UADER FCyT)</p>
+                                                                <a href="https://forms.gle/4NPYtkLu8rbPUywz7" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ============ MARTES 27 ============ -->
+                                        <div id="tab2" class="tab_single_content">
+                                            <div class="row">
+                                                <div class="col-md-12">
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>18:00 a 20:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Eduardo Beckman<br>Marcelo D. Calvi<br>Itatí Cislaghi</h4>
+                                                                <span>Taller Virtual</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>La IA como asistente del profesional docente: Modelo C.R.E.A. para diseñar propuestas de enseñanza contextualizadas</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Eduardo Beckman (E.E.T. N.º 2 Francisco Ramírez) · Marcelo D. Calvi (E.E.T. N.º 2 Francisco Ramírez) · Itatí Cislaghi (Esc. Normal Rep. Oriental del Uruguay)</p>
+                                                                <a href="https://forms.gle/8LaZrzfeTaVMzwTJ8" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ============ MIÉRCOLES 28 ============ -->
+                                        <div id="tab3" class="tab_single_content">
+                                            <div class="row">
+                                                <div class="col-md-12">
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>09:00 a 10:30</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Luisina Pocay<br>Juan Pablo Amarillo<br>Juliana Gericke</h4>
+                                                                <span>Taller Virtual</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Del territorio al código: diseñar desafíos ciudadanos con micro:bit</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Luisina Pocay · Juan Pablo Amarillo · Juliana Gericke (Distrito del Conocimiento)</p>
+                                                                <a href="https://forms.gle/nDb5ak2vBSg3Nm3N7" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- ============ JUEVES 29 ============ -->
+                                        <div id="tab4" class="tab_single_content">
+                                            <div class="row">
+                                                <div class="col-md-12">
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>08:30</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Acreditación · Planta Baja - 02</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>09:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Acto de apertura · Aula Posgrado, 3.er piso</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-conf">
+                                                            <div class="sc-time">
+                                                                <p>10:00 a 11:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Dr. Marcos Gómez</h4>
+                                                                <span>Conferencia inaugural</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>¿Para qué aprender ciencias de la computación si ya tenemos la IA?</h3>
+                                                                <p class="sc-meta"><b>Aula:</b> Posgrado - 3.er piso</p>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>11:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Break · Planta Baja</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
                                                             <div class="sc-time">
                                                                 <p>11:30 a 13:00</p>
                                                             </div>
@@ -314,40 +553,96 @@
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Débora Cingolani<br>
-                                                                    Rocío González</h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Mesa 1</h4>
+                                                                <span>Mesa · Mixta</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Pilas Bloques Desenchufado: Enseñá a programar jugando</h3>
-                                                                <a href="https://forms.gle/Z1sU28DabbvKhc5d6" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <h3>Más allá de la programación inicial</h3>
+                                                                <p class="sc-sub">Contenidos, prácticas y evaluación en la formación informática</p>
+                                                                <p class="sc-meta"><b>Aula:</b> Planta Baja - 02 · <b>Modera:</b> Mg. Karina Cedaro</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 5 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Experiencia</span><b>Impacto de la Introducción Temprana de SQL en la Enseñanza de Bases de Datos</b><br><span class="pauth">Norma Herrera (UNSL); Paola Azar (UNSL); Hugo Beilis (UNViMe); Pablo Palmero (UNSL); Darío Ruano (UNSL)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Experiencia “Pares Ordenados”: Teoría de Grafos con Aplicaciones</b><br><span class="pauth">Alejandro Picart (UADER FCyT)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Una propuesta para integrar la Seguridad Temprana: enfoque DevSecOps en el desarrollo de software</b><br><span class="pauth">Ilda Flavia Millan Tejada (Universidad Nacional de San Juan); Malena Paez (Universidad Nacional de San Juan); Laura Aballay (Universidad Nacional de San Juan)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>QoCode: Evaluación automática de calidad de código en tareas de programación</b><br><span class="pauth">Victoria Varani (DC-FCEN-UBA); Bruno Ventrici (DC-FCEN-UBA); Gonzalo Fernández (UNQ); Christian Cossio-Mercado (DC-FCEN-UBA)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Análisis y comparación de la imagen de tutor y director en la gestión de proyectos unipersonales de software académico</b><br><span class="pauth">Alice Rambo (Universidad Nacional de Misiones)</span></li>
+                                                                    </ul>
+                                                                </details>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-mesa">
                                                             <div class="sc-time">
-                                                                <p>14:30 a 16:00</p>
+                                                                <p>11:30 a 13:00</p>
                                                             </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Emilia Echeveste</h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Mesa 2</h4>
+                                                                <span>Mesa · Mixta</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Inteligencia Artificial y educación: una mirada crítica desde las Ciencias de la Computación</h3>
-                                                                <a href="https://forms.gle/UedNfT4dd4aeRaoB8" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <h3>Computación, comunidad y vocaciones</h3>
+                                                                <p class="sc-sub">Escuela, universidad, territorio y divulgación</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 3P - 02 · <b>Modera:</b> Lic. Natalia Mentil</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 6 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Experiencia</span><b>Talleres extraprogramáticos de ciencias de la computación: una apuesta por la ciudadanía digital crítica en la escuela técnica</b><br><span class="pauth">Natalia Zalazar (Instituto Superior de Estudios Pedagógicos); Agustin Barbesino (Instituto Técnico Maestro Alfredo Bravo); Paula González (Instituto Técnico Maestro Alfredo Bravo)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Un escenario en movimiento en la escuela técnica a partir de la educación STEAM ampliada</b><br><span class="pauth">Ariel Ferreira Szpiniak (AMULEN); Carolina Andrea Borbolla (IPET Nº 26 Juan Filloy)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Ada Lovelace day 2025: una experiencia de divulgación científica e inclusión</b><br><span class="pauth">Viviana Bourdetta (FCyT UADER); Evelyn Curuchet (FCyT UADER); Carolina Miño (FCyT UADER); Lia Romero Fuentes (FCyT UADER); Lourdes Verbauvede (FCyT UADER)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Conectando Saberes: vinculación entre la Universidad y la Escuela Media en Ciencias de la Computación</b><br><span class="pauth">Jorge Rodríguez (Facultad de Informática, Universidad Nacional del Comahue)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Cuando la tecnología encuentra sentido: Club Tech como modelo de innovación educativa en espacios no formales</b><br><span class="pauth">Luisina Pocay (Distrito del Conocimiento); Juan Pablo Amarillo (Distrito del Conocimiento); Juliana Gericke (Distrito del Conocimiento)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Bit-Ácora de Pioneras</b><br><span class="pauth">Viviana Bourdetta (FCyT UADER); Evelyn Curuchet (FCyT UADER); Carolina Miño (FCyT UADER); Lourdes Verbauvede (FCyT UADER)</span></li>
+                                                                    </ul>
+                                                                </details>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>11:30 a 13:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Débora Cingolani<br>Rocío González</h4>
+                                                                <span>Taller</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Pilas Bloques Desenchufado</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Débora Cingolani y Rocío González (Fundación Sadosky)</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 02 · <b>Modera:</b> Prof. Sofía Weinzetel</p>
+                                                                <a href="https://forms.gle/Z1sU28DabbvKhc5d6" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>13:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Almuerzo</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-taller">
                                                             <div class="sc-time">
                                                                 <p>14:30 a 16:00</p>
                                                             </div>
@@ -356,18 +651,137 @@
                                                             </div>
                                                             <div class="sc-name">
                                                                 <h4>Dr. Francisco Bavera</h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <span>Taller</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Alternativas para el desarrollo del Pensamiento Computacional: de lo desenchufado a lo enchufado</h3>
-                                                                <a href="https://forms.gle/NKJ5xQPANUVFseT47" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <h3>Pensamiento computacional: de lo desenchufado a lo enchufado</h3>
+                                                                <p class="sc-who"><b>Disertante:</b> Dr. Francisco Bavera (UNRC)</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 02 · <b>Modera:</b> Mg. Federico Graziani</p>
+                                                                <a href="https://forms.gle/NKJ5xQPANUVFseT47" class="btn-custom scroll-to" target="_blank">Inscripción</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>14:30 a 16:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Dra. Emilia Echeveste</h4>
+                                                                <span>Taller</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>IA y educación: una mirada crítica desde las Ciencias de la Computación</h3>
+                                                                <p class="sc-who"><b>Disertante:</b> Dra. Emilia Echeveste (UNC)</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 01 · <b>Modera:</b> Dra. Cecilia Martínez</p>
+                                                                <a href="https://forms.gle/UedNfT4dd4aeRaoB8" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>16:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Break · Planta Baja</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Mesa 3</h4>
+                                                                <span>Mesa · Artículos</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Comprender la IA para poder enseñarla</h3>
+                                                                <p class="sc-sub">Saberes, alfabetización y mirada crítica</p>
+                                                                <p class="sc-meta"><b>Aula:</b> Planta Baja - 02 · <b>Modera:</b> Esp. Julián Escalante</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 4 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Artículo</span><b>Saberes estudiantiles sobre inteligencia artificial y desafíos para una didáctica crítica de las Ciencias de la Computación</b><br><span class="pauth">Emilia Echeveste (Universidad Nacional de Córdoba); Natalia Monjelat (IRICE-CONICET); Lourdes Aguiar Cau (Universidad Nacional de Córdoba-CONICET)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Saberes de docentes sobre Inteligencia Artificial en escuelas secundarias de Córdoba</b><br><span class="pauth">Valeria González Angeletti (Universidad Nacional de Córdoba)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Inteligencia Artificial como contenido educativo: contribuciones a una alfabetización computacional</b><br><span class="pauth">Marcela Rivero (CEA-UNC); Cecilia Martinez (IDH CONICET, UNC); Natalia Monjelat (IRICE, CONICET-UNR)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Parece verdad, causal y universal, pero es verosímil, correlativa y parcial: la IA que la escuela debe leer y enseñar a leer</b><br><span class="pauth">Mara Borchardt (Fundación Programar); Magdalena Garzon (Fundación Programar); Julian Dabbah (UBA)</span></li>
+                                                                    </ul>
+                                                                </details>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Mesa 4</h4>
+                                                                <span>Mesa · Mixta</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Formar a quienes enseñan computación</h3>
+                                                                <p class="sc-sub">Currículo, didáctica y formación docente</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 3P - 02 · <b>Modera:</b> Lic. Pablo Pescio y Lic. Ben Saad</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 5 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Artículo</span><b>Análisis de las progresiones de aprendizaje de educación tecnológica y ciencias de la computación para la educación primaria de la Provincia de Córdoba</b><br><span class="pauth">Ariel Ferreira Szpiniak (UNRC / IPET Nº 26 Juan Filloy)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Formación docente en programación para educación primaria: un estudio sobre autopercepción e incorporación conceptual</b><br><span class="pauth">Marcos Gómez (UNC); Tomás Caballero (UBA); Inés Roggi (Fundación Sadosky)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Sobre un curso Didáctica de la Informática en formato híbrido: la percepción de los estudiantes</b><br><span class="pauth">Alejandro Miños (INET); Nicolás Artigas (INET)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Lectura y escritura con agentes cognitivos. Una experiencia en formación docente</b><br><span class="pauth">Lucila Dughera (CONICET/E-TCS); Fernando Bordignon (Universidad Pedagógica Nacional, UNIPE)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Taller de Robótica Aplicada: experiencia docente interdisciplinaria entre perfiles técnicos y pedagógicos</b><br><span class="pauth">Alice Rambo (Universidad Nacional de Misiones)</span></li>
+                                                                    </ul>
+                                                                </details>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Viviana Bourdetta<br>Evelyn Curuchet<br>Carolina Miño<br>Alejandro Picart</h4>
+                                                                <span>Taller 64</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Re-programando: docentes y robots</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Bourdetta, Curuchet, Miño, Picart</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 02 · <b>Modera:</b> Mg. Macarena De Los Santos</p>
+                                                                <a href="https://forms.gle/j5df3AnbfgGq57WK9" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-social">
                                                             <div class="sc-time">
                                                                 <p>20:30</p>
                                                             </div>
@@ -376,335 +790,336 @@
                                                             </div>
                                                             <div class="sc-name">
                                                                 <h4>Dr. Valentín Basel</h4>
-                                                                <span>Tábar Bar, Estrada 838 - Modalidad Presencial</span>
+                                                                <span>Actividad nocturna</span>
                                                             </div>
                                                             <div class="sc-info">
                                                                 <h3>Bingo! Hackeando la RAM de las Atari 2600</h3>
-                                                                <a href="https://forms.gle/VU3p7eG2MnnNQtS6A" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <p class="sc-who"><b>Disertante:</b> Dr. Valentín Basel (FaMAF-UNC)</p>
+                                                                <p class="sc-meta"><b>Aula:</b> TÁBAR - Estrada 838 · <b>Modera:</b> Esp. Sebastián Faure</p>
+                                                                <a href="https://forms.gle/VU3p7eG2MnnNQtS6A" class="btn-custom scroll-to" target="_blank">Inscripción</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
-
-
                                                 </div>
                                             </div>
                                         </div>
 
-
-                                        <div id="tab3" class="tab_single_content">
+                                        <!-- ============ VIERNES 30 ============ -->
+                                        <div id="tab5" class="tab_single_content">
                                             <div class="row">
                                                 <div class="col-md-12">
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-band">
                                                             <div class="sc-time">
-                                                                <p>9:00</p>
-                                                            </div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Julián Dabbah<br>
-                                                                    Marcos Gómez</h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <p>08:30</p>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Ciencia de Datos en la escuela, una mirada no neutral sobre la computación</h3>
-                                                                <a href="https://forms.gle/JaLVSJJ51AnsLv3AA" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <h3>Acreditación · Planta Baja</h3>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-demo">
                                                             <div class="sc-time">
-                                                                <p>10:30</p>
+                                                                <p>09:00 a 10:00</p>
                                                             </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Mec.Rosario Schunk<br>
-                                                                    Mg. Enzo Sguillaro</h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Demo</h4>
+                                                                <span>Conversatorio</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Conferencia central: Pensamiento computacional para todos: aprendizajes y tensiones de una experiencia a escala</h3>
+                                                                <h3>Experience AI – Raspberry Pi</h3>
+                                                                <p class="sc-meta"><b>Aula:</b> Planta Baja - 02 · <b>Modera:</b> Esp. Evelyn Curuchet</p>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-taller">
                                                             <div class="sc-time">
-                                                                <p>14:00 a 15:00</p>
+                                                                <p>09:00 a 10:00</p>
                                                             </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4></h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Lic. Julián Dabbah<br>Dr. Marcos Gómez</h4>
+                                                                <span>Taller</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Profes-IA: docentes explorando la inteligencia artificial</h3>
-                                                                <a href="https://forms.gle/FP9CDWfzWH4xtaLH8" class="btn-custom scroll-to" target="_blank"><font style="color:#0c3c63">Inscripción</font></a>
+                                                                <h3>Ciencia de Datos en la escuela, una mirada no neutral sobre la computación</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Lic. Julián Dabbah y Dr. Marcos Gómez</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 02 · <b>Modera:</b> Lic. Natalia Mentil</p>
+                                                                <a href="https://forms.gle/JaLVSJJ51AnsLv3AA" class="btn-custom scroll-to" target="_blank">Inscripción</a>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
+                                                        <div class="schedule-item sch-band">
                                                             <div class="sc-time">
-                                                                <p>17:00 a 18:00</p>
+                                                                <p>10:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Break · Planta Baja</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-conf">
+                                                            <div class="sc-time">
+                                                                <p>10:30 a 12:00</p>
                                                             </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4></h4>
-                                                                <span>Modalidad Presencial</span>
+                                                                <h4>Mec. Rosario Schunk<br>Mg. Enzo Sguillaro</h4>
+                                                                <span>Conferencia central</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Taller: Re-programando: docentes y robots, una dupla que transforma</h3>
+                                                                <h3>Pensamiento computacional para todos: aprendizajes y tensiones de una experiencia a escala</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Mec. Rosario Schunk y Mg. Enzo Sguillaro (Ceibal, Uruguay)</p>
+                                                                <p class="sc-meta"><b>Aula:</b> Posgrado - 3.er piso · <b>Modera:</b> Dra. Cecilia Martínez</p>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
-                                                </div>
-                                            </div>
-                                        </div>
-                                                    
-                                               <!--
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">09:00 - 09:30</div>
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>12:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Almuerzo</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>14:00 a 16:00</p>
+                                                            </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Acto </h4>
-                                                                <span>UNSL </span>
+                                                                <h4>Mesa 5</h4>
+                                                                <span>Mesa · Mixta</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Acto de Inauguración</h3>
+                                                                <h3>IA en la enseñanza y evaluación de la programación</h3>
+                                                                <p class="sc-sub">Nuevas prácticas, herramientas y criterios de evaluación</p>
+                                                                <p class="sc-meta"><b>Aula:</b> Planta Baja - 02 · <b>Modera:</b> Mg. Lourdes Pralong</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 4 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Artículo</span><b>Reingeniería de la enseñanza ante la IA generativa: de los modelos generados al criterio construido</b><br><span class="pauth">Silvia VeraLaceiras (UNaM); Fabio Ledesma (UNaM); Selva N Ivaniszyn (UNaM); Roberto Sueldo (UNaM)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Enseñar a programar con un uso crítico de la inteligencia artificial en contextos universitarios</b><br><span class="pauth">Jorgelina Rial (UNGS); Santiago Montiel (UNGS)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Evaluación de código fuente con IA generativa. Concordancia con la corrección docente basada en rúbrica en una asignatura de programación</b><br><span class="pauth">Gladys Dapozo (UNNE); Ana María Company (UNNE); Erika Daniela Demchum (UNNE); Raquel Petris (UNNE)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>ProgrEval: Generación asistida de consignas de evaluación para la enseñanza de programación</b><br><span class="pauth">Tomás Caballero (DC-FCEN-UBA); Agustín Fernández-Ortúzar (DC-FCEN-UBA); Gonzalo Fernández (UNQ); Christian Cossio-Mercado (DC-FCEN-UBA)</span></li>
+                                                                    </ul>
+                                                                </details>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
-                                                    
+
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">09:30 - 10:30</div>
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>14:00 a 16:00</p>
+                                                            </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Conferencia</h4>
-                                                                <span>Inaugural</span>
+                                                                <h4>Mesa 6</h4>
+                                                                <span>Mesa · Experiencias</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>TBA</h3>
-                                                                <p>Disertante - Filiación</p>
-                                                                <p>Resumen</p>
+                                                                <h3>Programar, crear y experimentar</h3>
+                                                                <p class="sc-sub">Robótica, indagación y propuestas lúdicas</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 3P - 02 · <b>Modera:</b> Dra. Emilia Echeveste</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 7 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Experiencia</span><b>Construcción y programación de molinos (T-BoT)</b><br><span class="pauth">Nadia Morúa (Escuela Graduada Joaquín V. González)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Más allá de la conexión: una experiencia de pareja pedagógica híbrida en la enseñanza de programación y robótica</b><br><span class="pauth">Mauro Martinez; Daniela Azurmendi; Ruth Teves (Wave Education)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Re-programando el futuro: humanos y robots en misión de juego</b><br><span class="pauth">Viviana Bourdetta; Evelyn Curuchet; Carolina Miño; Lourdes Verbauvede; Mara Conte; Tomas Rodriguez (FCyT UADER)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Paraná 2030 en código: pensamiento computacional con micro:bit en el grupo Carpinchos</b><br><span class="pauth">Luisina Pocay; Juan Pablo Amarillo; Gabriela González (Distrito del Conocimiento)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Pensamiento Computacional en el Centro Corazón: una experiencia de enseñanza con niñas y niños de nivel primario en un contexto de alta vulnerabilidad social</b><br><span class="pauth">Francisco Bavera; Marcela Daniele; Teresa Quintero (Universidad Nacional de Río Cuarto)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Desafío en bloques: La enseñanza por indagación de las Ciencias de la Computación desde un enfoque de derechos</b><br><span class="pauth">Sabrina Carnez (EPS 3); Yanina Gutierrez (EPS 3); Maricruz Diaz (EPS 3)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Robots musicales en el Barrio: Experiencia en la 4.ª Jornada “Mujeres Construyendo Futuro”</b><br><span class="pauth">Viviana Bourdetta (FCyT UADER); Evelyn Curuchet (FCyT UADER); Carolina Miño (FCyT UADER); Alejandro Picart (FCyT UADER)</span></li>
+                                                                    </ul>
+                                                                </details>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
                                                     <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">11:00 - 13:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images.jpeg" class="img-circle" alt="foto disertante">
+                                                        <div class="schedule-item sch-demo">
+                                                            <div class="sc-time">
+                                                                <p>14:00 a 16:00</p>
                                                             </div>
-                                                            <div class="sc-name">
-                                                                <h4>Sesiones</h4>
-                                                                <span> </span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Sesión 1: Artículos </h3>
-                                                                <h3>Sesión 1: Experiencias Docentes </h3>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">14:00 - 16:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images1.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Mesa</h4>
-                                                                <span>Discusión</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>TBA</h3>
-                                                                
-                                                                <p>Disertantes</p>
-                                                                
-                                                                <p>Resumen.  </p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                    -->
-
-
-                                                      <!--<div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">18:00 - 20:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images1.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Mesa</h4>
-                                                                <span>Discusión</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>TBA</h3>
-                                                                
-                                                                <p>Disertantes</p>
-                                                                
-                                                                <p>Resumen.  </p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div id="tab3" class="tab_single_content">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">09:00 - 11:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Sesiones</h4>
-                                                                <span> </span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Sesión 2: Artículos </h3>
-                                                                <h3>Sesión 2: Experiencias Docentes </h3>
-
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">11:00 - 13:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images1.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Mesa</h4>
-                                                                <span>Discusión</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                  <h3>TBA</h3>
-                                                                
-                                                                <p>Disertantes</p>
-                                                                
-                                                                <p>Resumen.  </p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                    
-
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">14:00 - 16:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Sesiones</h4>
-                                                                <span> </span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                <h3>Sesión 3: Artículos </h3>
-                                                                <h3>Sesión 3: Experiencias Docentes </h3>
-
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">16:00 - 18:00</div>
-                                                            <div class="sc-pic">
-                                                                <img src="images/team/small/images1.jpeg" class="img-circle" alt="foto disertante">
-                                                            </div>
-                                                            <div class="sc-name">
-                                                                <h4>Mesa</h4>
-                                                                <span>Discusión</span>
-                                                            </div>
-                                                            <div class="sc-info">
-                                                                 <h3>TBA</h3>
-                                                                
-                                                                <p>Disertantes</p>
-                                                                
-                                                                <p>Resumen.  </p>
-                                                            </div>
-                                                            <div class="clearfix"></div>
-                                                        </div>
-                                                    </div>                                                  
-                                                    
-                                                    <div class="schedule-listing">
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">18:00 - 19:00</div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Conferencia</h4>
-                                                                <span>Cierre</span>
+                                                                <h4>Dr. Marcos Gómez</h4>
+                                                                <span>Demo de herramientas</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>TBA</h3>
-                                                                <p> Disertante </p>
-                                                                <p>Resumen.</p>
+                                                                <h3>Modelos de lenguaje y auditoría para la enseñanza</h3>
+                                                                <p class="sc-who"><b>Disertante:</b> Dr. Marcos Gómez</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 3P - 01 (a confirmar) · <b>Modera:</b> Dr. Valentín Basel</p>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </div>
 
-                                                    <div class="schedule-listing"> 
-                                                        <div class="schedule-item">
-                                                            <div class="sc-time">19:00 - 19:30</div>
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>16:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Break + Chamarrita · Planta Baja · Baile folclórico sobre calle 25 de Mayo</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
                                                             <div class="sc-pic">
                                                                 <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
                                                             </div>
                                                             <div class="sc-name">
-                                                                <h4>Acto </h4>
-                                                                <span>Cierre </span>
+                                                                <h4>Mesa 7</h4>
+                                                                <span>Mesa · Mixta</span>
                                                             </div>
                                                             <div class="sc-info">
-                                                                <h3>Acto de Cierre</h3>
+                                                                <h3>Enseñar programación en los primeros años universitarios</h3>
+                                                                <p class="sc-sub">Secuencias, estrategias y desafíos iniciales</p>
+                                                                <p class="sc-meta"><b>Aula:</b> Planta Baja - 02 · <b>Modera:</b> Lic. Virginia Brassesco</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 4 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Artículo</span><b>Los fundamentos teóricos de un método para enseñar a programar. Un modelo de cómputo general y su máquina notacional como sistema de decisiones de diseño</b><br><span class="pauth">Pablo E. -Fidel- Martínez López (UNQ); Federico Agustín Sawady O'Connor (UNQ)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>De los TDA a los objetos: una estrategia pedagógica para la enseñanza de la programación en la educación superior</b><br><span class="pauth">Claudia Albornoz (UNSL); Analia Zaldúa (UNSL)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>Más allá del aprendizaje de programación: las Actividades Grupales Integradoras como estrategia de integración académica y permanencia en estudiantes universitarios de primer año</b><br><span class="pauth">Maria Gisela Dorzán (UNSL); María José Garciarena Ucelay (UNSL); Matías Iván Truglio (UNSL)</span></li>
+                                                                        <li><span class="ptag">Experiencia</span><b>De la lógica a la programación mediante desafíos: transformación de una propuesta de enseñanza en una asignatura universitaria masiva</b><br><span class="pauth">Lucas Spigariol (UNAHUR); María Luisa Bravo (UNAHUR); Inés Noemí del Castillo (UNAHUR); Alejandra Pinto (UNAHUR); Sebastián Godoy (UNAHUR); Victor Gonzalvez (UNAHUR); Magno Tellechea (UNAHUR)</span></li>
+                                                                    </ul>
+                                                                </details>
                                                             </div>
                                                             <div class="clearfix"></div>
                                                         </div>
-                                                    </div>-->
+                                                    </div>
 
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-mesa">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Mesa 8</h4>
+                                                                <span>Mesa · Artículos</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Diseñar para ampliar el acceso</h3>
+                                                                <p class="sc-sub">Tecnologías abiertas, recursos accesibles e inclusión</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 3P - 02 · <b>Modera:</b> Prof. Carolina Kloster</p>
+                                                                <details class="papers">
+                                                                    <summary>Ver 5 ponencias</summary>
+                                                                    <ul class="papers-list">
+                                                                        <li><span class="ptag">Artículo</span><b>Enseñanza de la programación con tecnologías abiertas: aportes desde una investigación basada en el diseño</b><br><span class="pauth">Valentín Basel (FaMAF-UNC); Ivana Graciela Guzman (IPET 424)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>AR2-R4: Robot Educativo de diseño abierto ROS2-compatible basado en Arduino UNO R4</b><br><span class="pauth">Gonzalo Fernández (UNQ); Leon Herrera (UBA); Christian Cossio Mercado (UBA); Pablo de Cristóforis (UBA)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>La caja de juegos: juegos de mesa para la enseñanza de la computación en contextos de baja disponibilidad de recursos</b><br><span class="pauth">Julieta Giri (DC-FCEN-UBA); Gonzalo Pablo Fernández (DC-FCEN-UBA); Christian Cossio-Mercado (DC-FCEN-UBA)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Tecnologías inclusivas como experiencia de formación profesional: aprendizajes de estudiantes universitarios en el InTecLab</b><br><span class="pauth">Emilce Castillo; Dafne Iara Perron Vernaz; Eduardo Velazquez; Alejandro Martinez; Milagros Dodera; Valentino Bonnin; Joaquín Nichele; Cesar Fus; Agustin Bonnin; Nicolás Martínez (UADER FCyT)</span></li>
+                                                                        <li><span class="ptag">Artículo</span><b>Diseño de materiales didácticos accesibles de origen y reducción de barreras para el aprendizaje, la comunicación y la participación en la enseñanza del Diseño de Tecnologías</b><br><span class="pauth">Rocío Noelia Rodríguez (Agencia de Habilidades para el Futuro, Ministerio de Educación GCBA)</span></li>
+                                                                    </ul>
+                                                                </details>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
 
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-taller">
+                                                            <div class="sc-time">
+                                                                <p>16:30 a 18:00</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Lic. Gonzalo Fernández<br>Dr. Christian Cossio-Mercado</h4>
+                                                                <span>Taller</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Programando el mundo físico con Arduino</h3>
+                                                                <p class="sc-who"><b>Disertantes:</b> Lic. Gonzalo Fernández y Dr. Christian Cossio-Mercado</p>
+                                                                <p class="sc-meta"><b>Aula:</b> 2P - 02 · <b>Modera:</b> Esp. Ing. Jorgelina Nadal</p>
+                                                                <a href="https://forms.gle/pJsDf4zJ9USJ2zgE7" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-band">
+                                                            <div class="sc-time">
+                                                                <p>18:00</p>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Acto de cierre · Aula Posgrado, 3.er piso</h3>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="schedule-listing">
+                                                        <div class="schedule-item sch-social">
+                                                            <div class="sc-time">
+                                                                <p>18:30</p>
+                                                            </div>
+                                                            <div class="sc-pic">
+                                                                <img src="images/team/small/images2.jpeg" class="img-circle" alt="foto disertante">
+                                                            </div>
+                                                            <div class="sc-name">
+                                                                <h4>Actividad social</h4>
+                                                                <span>Bus turístico</span>
+                                                            </div>
+                                                            <div class="sc-info">
+                                                                <h3>Bus turístico</h3>
+                                                                <a href="https://forms.gle/xXAo9ENvFPoVuYEx8" class="btn-custom scroll-to" target="_blank">Inscripción</a>
+                                                            </div>
+                                                            <div class="clearfix"></div>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>
